@@ -1,0 +1,286 @@
+body{
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: hsl(240, 78%, 98%);
+    margin: 0;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;    
+}
+main{
+    width: 100%;
+    min-width: 100%;
+}
+
+.top{
+     position: absolute;
+    top: 0;
+     right: 0;
+}
+.bottom{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+}
+
+header{
+    .header-title{
+        text-align: center;
+        color:  hsl(233, 13%, 49%);
+
+    }
+    .subtitle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        color: hsl(234, 14%, 74%);
+    }
+    
+}
+
+.toggle-background{
+    border: 1px hsl(237, 63%, 64%) solid;
+    width: 3.9em;
+   height: 1.9em;
+   border-radius: 20px;
+   background-color: hsl(237, 63%, 64%);
+   position: relative;
+  
+   .toggle{
+       border: 1px solid white;
+       width: 1.3em;
+       height: 1.3em;
+       background-color: white;
+     border-radius: 50%;
+       position: absolute;
+       top: 13%;
+       margin-left: 4px;
+       transform: translateX(32px);
+       transition: 0.3s;
+   }
+   .toggle-active{
+    border: 1px solid white;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+  border-radius: 50%;
+    position: absolute;
+    top: 13%;
+    margin-left: 4px;
+    transition: 0.3s;
+
+   }
+ 
+}
+
+section{
+    display: flex;
+    justify-content: center;
+//   display: grid;
+//   grid-template-rows: 30em 1em;
+//   grid-template-columns: 23em 25em 20em;
+//   justify-content: center;
+  margin-top: 5em;
+  h2{
+      font-weight: 300;
+  }
+  span{
+      font-size: 4rem;
+  }
+  .title{
+      padding-bottom: 2em;
+  }
+
+  .basic{
+      background-color: white;
+      padding: 1em 2em 0 2em;
+      border-radius: 7px;
+      text-align: center;
+      width: 20em;
+      position: relative;
+      z-index: 2;
+      height: 28.5em;
+      color: hsl(232, 13%, 33%);
+      line-height: 2.5em;
+     
+      
+      h2{
+        font-size: 1rem;
+
+      }
+      div{
+          border-bottom: 1px solid  hsl(234, 14%, 74%);
+      }
+      button{
+        margin-top: 2em;
+      //   margin-bottom: 1em;
+        width: 100%;
+        background-image: linear-gradient(109deg,hsl(234, 14%, 74%),hsl(237, 63%, 64%));
+        height: 3em;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-family:'Montserrat', sans-serif ;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    button:hover{
+        color: hsl(237, 63%, 64%);
+        background-color: white;
+        background-image: none;
+        border: 2px solid hsl(234, 14%, 74%);
+        cursor: pointer;
+
+    }
+      
+  }
+  .professional{
+      background-image: linear-gradient(155deg,  hsl(234, 14%, 74%),hsl(237, 63%, 64%));
+      padding-top: 3.6em;
+      padding-bottom: 0;
+     padding-left: 3em;
+     padding-right: 3em;
+      margin-top: -2.7em;
+      border-radius: 7px;
+      text-align: center;
+      position: relative;
+      width: 18em; 
+      z-index: 10000;
+      height: 30em;
+      line-height: 2.5em;
+      color: white;
+
+      h2{
+          padding: 0;
+          font-size: 1rem;
+      }
+       div{
+        border-bottom: 1px solid   hsl(234, 14%, 74%);
+    }
+    button{
+        margin-top: 2em;
+      //   margin-bottom: 1em;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        height: 3em;
+        border-radius: 5px;
+        border: none;
+        font-family:'Montserrat', sans-serif ;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: hsl(237, 63%, 64%);
+        cursor: pointer;
+
+    }
+    button:hover{
+        color: white;
+        background-image: none;
+        border: 2px solid white;
+        background-color: #0000;
+    }
+  }
+  .master{
+      background-color: white;
+      padding: 1em 2em 0 2em;
+      border-radius: 7px;
+      text-align: center;
+      width: 20em;
+      position: relative;
+      z-index: 2;
+      height: 28.5em;
+      line-height: 2.5em;
+      color: hsl(232, 13%, 33%);
+
+
+      h2{
+        font-size: 1rem;
+
+    }    
+      div{
+        border-bottom: 1px solid  hsl(234, 14%, 74%);
+    }
+    button{
+        margin-top: 2em;
+      //   margin-bottom: 1em;
+        width: 100%;
+        background-image: linear-gradient(109deg,hsl(234, 14%, 74%),hsl(237, 63%, 64%));
+        height: 3em;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-family:'Montserrat', sans-serif ;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    button:hover{
+        color: hsl(237, 63%, 64%);
+        background-color: white;
+        background-image: none;
+        border: 2px solid hsl(234, 14%, 74%);
+        cursor: pointer;
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 380px){
+    body{
+        background-repeat: no-repeat;
+        position: relative;
+        background-color: hsl(240, 78%, 98%);
+        margin: 0;
+        height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        width: 23em;
+        max-width: 378px;
+        min-width: 350px;
+        overflow-x: hidden;
+
+    }
+    main{
+        width: auto;
+        min-width: 100%;
+        position: relative;
+    }
+    
+    .top{
+        position: absolute;
+        z-index: -1000;
+       top: -5%;
+        right: -50%;
+   }
+   .bottom{
+       display: none;
+       position: absolute;
+       bottom: 0%;
+       left: 0;
+   }
+    section{
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .basic{
+           width: 16em;
+           padding: 2em 2em 0 2em;
+           margin-bottom: 2.3em;
+        }
+        .professional{
+            width: 16em;
+            padding: 2em 2em 0 2em;
+        }
+        .master{
+            padding: 2em 2em 0 2em;
+            width: 16em;
+            margin-bottom: 3em;
+        }
+
+    }
+}

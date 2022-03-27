@@ -1,0 +1,304 @@
+body {
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #f6f6fe;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  min-width: 100%;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+}
+
+header .header-title {
+  text-align: center;
+  color: #6d708d;
+}
+
+header .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  color: #b3b5c6;
+}
+
+.toggle-background {
+  border: 1px #696fdd solid;
+  width: 3.9em;
+  height: 1.9em;
+  border-radius: 20px;
+  background-color: #696fdd;
+  position: relative;
+}
+
+.toggle-background .toggle {
+  border: 1px solid white;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 13%;
+  margin-left: 4px;
+  -webkit-transform: translateX(32px);
+          transform: translateX(32px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.toggle-background .toggle-active {
+  border: 1px solid white;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 13%;
+  margin-left: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5em;
+}
+
+section h2 {
+  font-weight: 300;
+}
+
+section span {
+  font-size: 4rem;
+}
+
+section .title {
+  padding-bottom: 2em;
+}
+
+section .basic {
+  background-color: white;
+  padding: 1em 2em 0 2em;
+  border-radius: 7px;
+  text-align: center;
+  width: 20em;
+  position: relative;
+  z-index: 2;
+  height: 28.5em;
+  color: #494c5f;
+  line-height: 2.5em;
+}
+
+section .basic h2 {
+  font-size: 1rem;
+}
+
+section .basic div {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+section .basic button {
+  margin-top: 2em;
+  width: 100%;
+  background-image: linear-gradient(109deg, #b3b5c6, #696fdd);
+  height: 3em;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section .basic button:hover {
+  color: #696fdd;
+  background-color: white;
+  background-image: none;
+  border: 2px solid #b3b5c6;
+  cursor: pointer;
+}
+
+section .professional {
+  background-image: linear-gradient(155deg, #b3b5c6, #696fdd);
+  padding-top: 3.6em;
+  padding-bottom: 0;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: -2.7em;
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+  width: 18em;
+  z-index: 10000;
+  height: 30em;
+  line-height: 2.5em;
+  color: white;
+}
+
+section .professional h2 {
+  padding: 0;
+  font-size: 1rem;
+}
+
+section .professional div {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+section .professional button {
+  margin-top: 2em;
+  width: 100%;
+  background-color: white;
+  height: 3em;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #696fdd;
+  cursor: pointer;
+}
+
+section .professional button:hover {
+  color: white;
+  background-image: none;
+  border: 2px solid white;
+  background-color: #0000;
+}
+
+section .master {
+  background-color: white;
+  padding: 1em 2em 0 2em;
+  border-radius: 7px;
+  text-align: center;
+  width: 20em;
+  position: relative;
+  z-index: 2;
+  height: 28.5em;
+  line-height: 2.5em;
+  color: #494c5f;
+}
+
+section .master h2 {
+  font-size: 1rem;
+}
+
+section .master div {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+section .master button {
+  margin-top: 2em;
+  width: 100%;
+  background-image: linear-gradient(109deg, #b3b5c6, #696fdd);
+  height: 3em;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section .master button:hover {
+  color: #696fdd;
+  background-color: white;
+  background-image: none;
+  border: 2px solid #b3b5c6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #f6f6fe;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    width: 23em;
+    max-width: 378px;
+    min-width: 350px;
+    overflow-x: hidden;
+  }
+  main {
+    width: auto;
+    min-width: 100%;
+    position: relative;
+  }
+  .top {
+    position: absolute;
+    z-index: -1000;
+    top: -5%;
+    right: -50%;
+  }
+  .bottom {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+  }
+  section {
+    gap: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .basic {
+    width: 16em;
+    padding: 2em 2em 0 2em;
+    margin-bottom: 2.3em;
+  }
+  section .professional {
+    width: 16em;
+    padding: 2em 2em 0 2em;
+  }
+  section .master {
+    padding: 2em 2em 0 2em;
+    width: 16em;
+    margin-bottom: 3em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
